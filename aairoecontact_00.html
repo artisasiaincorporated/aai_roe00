@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automatic Dialing Link</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+  }
+  .container {
+    max-width: 600px;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #cc3300, #ff9933, #ffff66); /* Darker red transitioning to orange and yellow */
+    color: white; /* White text */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .container p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #cc3300; /* Red button */
+    color: white; /* White text */
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  .button:hover {
+    background-color: #b32400; /* Darken button on hover */
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Your Time, Your Wealth, Our Expertise</h1>
+  <p>success awaits with one click away.</p>
+  <a href="javascript:void(0);" onclick="makeCall();" class="button">Call Now</a>
+</div>
+
+<script>
+function makeCall() {
+  var phoneNumber = '+639171448079'; // Replace with your phone number
+  window.location.href = 'tel:' + phoneNumber;
+}
+</script>
+
+</body>
+</html>
